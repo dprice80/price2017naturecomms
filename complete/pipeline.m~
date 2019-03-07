@@ -1,0 +1,24 @@
+%% Nature Communications Paper Analysis Pipeline
+% Darren Price 2016
+
+% Epoch the data 
+edit /imaging/dp01/scripts/av_nature/copy_epoch_data_avpassive.m
+edit /imaging/dp01/scripts/av_nature/copy_epoch_data_avtask.m
+
+% Calculate principal components
+edit /imaging/dp01/scripts/av_nature/PCA_Sensors_allsubs_AVPASSIVE.m % Figure 1 and Supp Fig 2
+edit /imaging/dp01/scripts/av_nature/PCA_Sensors_allsubs_AVPASSIVE_0_150ms.m % Supp Fig 1 (reruns fitting with short time windows)
+edit /imaging/dp01/scripts/av_nature/PCA_Sensors_allsubs_AVTASK.m % Supp Fig 2
+edit /imaging/dp01/scripts/av_nature/PCA_Sensors_allsubs_AVTASK_ApplyPassiveWeights.m
+
+% Plot Delay Estimation Figures
+edit /imaging/dp01/scripts/av_nature/Stats_ERPs_Paper.m
+edit /imaging/dp01/scripts/av_nature/Stats_ERPs_Paper_shortwin.m % Supplementary Figure 1
+
+% Run mediation analysis
+edit /imaging/dp01/scripts/av_nature/run_robust_mediation.m
+
+% Answers to Reviewer's Comments 
+edit /imaging/dp01/scripts/av_nature/code_tests/runtest_gaussian_peaks_2Dgrid.m % Supp Figure 3
+edit /imaging/dp01/scripts/av_nature/code_tests/runtest_real_data_peak_vs_template_avpassive.m % Supp Figure 4
+edit /imaging/dp01/scripts/av_nature/create_powercalc_simulations.m % Supp Figure 5
